@@ -29,12 +29,12 @@ class TestEmailerImpl {
 	
 	@Test
 	public void testSendSomeEmails() {
-		Email email= new Email(to:["lucas.e.gray@gmail.com"],subject:"email",message:"mornin",from:"lucas.e.gray@gmail.com")
+		Email email= new Email(to:["email@email.com"],subject:"email",message:"mornin",from:"email@email.com")
 		
 		email.send()
 		
-		Email email2= new Email(to:["lucas.e.gray@gmail.com"],subject:"email",message:"mornin",from:"lucas.e.gray@gmail.com")
-		Email email3= new Email(to:["lucas.e.gray@gmail.com"],subject:"email",message:"mornin",from:"lucas.e.gray@gmail.com")
+		Email email2= new Email(to:["email@email.com"],subject:"email",message:"mornin",from:"email@email.com")
+		Email email3= new Email(to:["email@email.com"],subject:"email",message:"mornin",from:"email@email.com")
 		
 		def li = [email,email2,email3]
 		
