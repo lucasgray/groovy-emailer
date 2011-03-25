@@ -7,7 +7,7 @@
     </layout>
   </appender>
 
-	<logger name="org.ehealth" additivity="false">
+	<logger name="com.airdrawn.emailer" additivity="false">
 		<level value="debug" />
 		<appender-ref ref="stdout" />
 	</logger>

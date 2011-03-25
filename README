@@ -1,7 +1,10 @@
+groovy-emailer.
 
-//simple groovy emailer. 
-//the groovy way.
-//javax.mail is so old fashioned.
+simple groovy emailer, the groovy way.
+
+javax.mail is seriously old fashioned.
+
+the best features are available in groovy, but java can still have fun.
 
 //send one email, with one attachment
 def email = new Email(to:["email@email.com"],subject:"email",message:"email",from:"email@email.com")
