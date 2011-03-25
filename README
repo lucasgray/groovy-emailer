@@ -1,8 +1,15 @@
 
-send one email
+//simple groovy emailer. 
+//the groovy way.
+//javax.mail is so old fashioned.
+
+//send one email, with one attachment
 def email = new Email(to:["email@email.com"],subject:"email",message:"email",from:"email@email.com")
+def attachment = new Attachment(filename: "thePdf.pdf",data: aPdfByteArray, mimetype: 'application/pdf')
+
+email.attachments << attachment
 email.send()
 
-send many emails
+//send many emails, in a list, in parallel
 def emails = [email1,email2,email3]
 emails.send() //using ExpandoMetaClass on java.util.list
