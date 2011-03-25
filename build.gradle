@@ -1,7 +1,7 @@
-apply plugin: 'java'
-apply plugin: 'groovy'
-apply plugin: 'eclipse'
-apply plugin: 'maven'
+usePlugin 'java'
+usePlugin 'groovy'
+usePlugin 'eclipse'
+usePlugin 'maven'
 
 sourceCompatibility = 1.6
 version='1.0.2'
@@ -18,9 +18,6 @@ sourceSets {
 		groovy {srcDir 'test'}
 		resources {srcDir 'test'}
 		}
-}
-configurations {
-    deployerJars //add a new configuration for uploading
 }
 dependencies {
 
