@@ -2,7 +2,7 @@ groovy-emailer
 
 simple groovy emailer, the groovy way.  javax.mail is seriously old fashioned.  The best features are available in groovy, but java can still have fun.
 
-just fill in the properties file with your info and off you go.
+just fill in the properties file with your info and off you go.  Properties file (emailer.properties) must be on classpath to function.
 
 sendEmail >> send email or not.  will just log it if false.
 emailOverride >> address ALL emails should be sent to, regardless of their to field.  Useful for testing!
