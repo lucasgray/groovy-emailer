@@ -1,6 +1,9 @@
-groovy-emailer
+groovy-emailer [old]
 
-simple groovy emailer, the groovy way.  javax.mail is seriously old fashioned.  The best features are available in groovy, but java can still have fun.
+A simple thought experiment I had a few years ago when playing with metaclass in groovy.  The main feature was exploiting the dynamic typing of the language - 
+I added a method to List that could operate on a list of emails to send them.  Code examples below.
+
+The best features are available in groovy, but java will work too.
 
 just fill in the properties file with your info and off you go.  Properties file (emailer.properties) must be on classpath to function.
 
